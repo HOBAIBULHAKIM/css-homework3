@@ -1,0 +1,65 @@
+/* *common css*/
+{ 
+*margin:0;
+*padding:0;
+}
+
+
+ul,ol{
+ list-style: none;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+/* *common css end*/
+nav{ 
+ background-image: background: #FC5C7D;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ; 
+ padding:8px 0px;
+
+  text-align: center
+
+}  
+
+nav ul li{ 
+  display: inline-block;
+
+}  
+
+nav ul li a{ 
+    color: brown;
+    padding: 15px 25px;
+    display: block;
+    margin: 10px 10px;
+}
+
+nav ul li:hover a{
+    background-color: rgba(255, 255, 255,0.2);
+
+}
+
+nav ul li .submenu{
+    position: absolute;
+    border: 1px solid #aaa;
+    background-color: white;
+    display: none;
+    transition: 0.5s;
+    opacity: 0; 
+    visibility: hidden;
+    margin-top: 50px;
+}
+nav ul li .submenu{
+    display: block;
+    border-bottom: 1px solid #aaa;
+}
+
+nav ul li:hover .submenu{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0px;
+}
